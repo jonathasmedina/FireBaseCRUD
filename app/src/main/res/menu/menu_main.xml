@@ -4,14 +4,16 @@
 
     <item android:id="@+id/menu_novo"
         android:title="Novo"
-        android:icon="@mipmap/ic_adicionar"
+        android:icon="@drawable/ic_adicionar2"
         app:showAsAction="always"/>
+
     <item android:id="@+id/menu_atualiza"
         android:title="Atualiza"
-        android:icon="@mipmap/ic_atualizar"
+        android:icon="@drawable/ic_atualizar2"
         app:showAsAction="always"/>
+
     <item android:id="@+id/menu_deleta"
         android:title="Deleta"
-        android:icon="@mipmap/ic_deletar"
+        android:icon="@drawable/ic_deletar2"
         app:showAsAction="always"/>
 </menu>
