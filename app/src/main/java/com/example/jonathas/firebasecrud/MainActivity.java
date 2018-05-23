@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void limparCampos() {
-        edEmail.setText("");
+        edNome.setText("");
         edEmail.setText("");
     }
 }
