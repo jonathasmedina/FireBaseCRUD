@@ -76,6 +76,7 @@ public class Pesquisa extends AppCompatActivity {
             query = databaseReference.child("Pessoa").orderByChild("nome").startAt(palavra).endAt(palavra+"\uf8ff");
         }
 
+        //limpar vetor
         pessoaList.clear();
 
         query.addValueEventListener(new ValueEventListener() {
