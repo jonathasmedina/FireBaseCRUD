@@ -12,8 +12,17 @@
         android:icon="@drawable/ic_atualizar2"
         app:showAsAction="always"/>
 
+    <item android:id="@+id/menu_pesquisa"
+        android:title="Atualiza"
+        android:icon="@drawable/ic_action_name"
+        app:showAsAction="always"/>
+
+
     <item android:id="@+id/menu_deleta"
         android:title="Deleta"
         android:icon="@drawable/ic_deletar2"
         app:showAsAction="always"/>
+
+
+
 </menu>
