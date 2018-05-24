@@ -62,12 +62,18 @@ public class Pesquisa extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        pesquisarPalavra("");
+    }
+
     private void pesquisarPalavra(String palavra) {
         Query query;
         if (palavra.equals("")) {
             query = databaseReference.child("Pessoa").orderByChild("nome");
         } else {
-            query = databaseReference.child("Pessoa").startAt(palavra).endAt(palavra+"\uf8ff");
+            query = databaseReference.child("Pessoa").orderByChild("nome").startAt(palavra).endAt(palavra+"\uf8ff");
         }
 
         pessoaList.clear();
